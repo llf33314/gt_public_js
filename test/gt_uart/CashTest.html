@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试cash</title>
+    <script type="text/javascript" src="../../gt_uart/cash-1.0.0.js"></script>
+    <script type="text/javascript">
+        function openCash() {
+            var cashCom = document.getElementById("cash").value;
+            console.log(cashCom);
+            openCashFn(cashCom);
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="cash"/>
+    <button onclick="openCash();">开箱</button>
+</body>
+</html>
