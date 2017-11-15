@@ -1,29 +1,32 @@
 # gt
  
 前端业务代码工具库  
-## 安装使用
-### 浏览器:
+
+### 浏览器
 ``` html
-  <script src="gt.min.js"></script>
+  <script src="dist/gt.min.js"></script>
 ```
-
-### npm:
-``` bash
-$ npm install --save-dev 
-```
-
-webpack、RequireJS、SeaJS等
-
+### vue-cli方法
+- 安装
 ``` javascript
-// 完整引入
-const gt = require('gt-public-js/dist/gt.min')
+  npm i --save-dev gt-public-js
 ```
-
-**推荐使用方法**  
-
-你真的不需要完整引入所有函数，所以只引入需要使用的方法即可。
+- 使用
 ``` javascript
-// 只引入部分方法('dist/<方法名>')
-const getMd5 = require('gt-public-js/lib/getMd5')
+  <script>
+    // 完整引入
+    const gt = require('gt-public-js/lib/gt.min')
+
+    // 只引入部分方法('dist/<方法名>')
+    const getMd5 = require('gt-public-js/lib/getMd5')
+
+    export default{
+      methods(){
+        test(){
+          console.log(getMd5(),'获取md5字符串')
+        }
+      }
+    }
+  </script>
 ```
 
