@@ -1,13 +1,10 @@
-# outils
+# gt
  
 前端业务代码工具库  
 ## 安装使用
 ### 浏览器:
 ``` html
   <script src="gt.min.js"></script>
-  <script>
-      var gt = gt.fn()
-  </script>
 ```
 
 ### npm:
