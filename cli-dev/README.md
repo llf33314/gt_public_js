@@ -8,10 +8,12 @@
 ```
 ### vue-cli方法
 - 安装
+
 ``` javascript
   npm i --save-dev gt-public-js
 ```
 - 使用
+
 ``` javascript
   <script>
     // 完整引入
