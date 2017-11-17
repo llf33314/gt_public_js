@@ -22,7 +22,7 @@ module.exports = (date, fmt) => {
     'q+': Math.floor((date.getMonth() + 3) / 3),
     S: date.getMilliseconds()
   }
-  if (/(y+)/.test(fmt))
+  if ("/(y+)/".test(fmt))
     fmt = fmt.replace(
       RegExp.$1,
       (date.getFullYear() + '').substr(4 - RegExp.$1.length)

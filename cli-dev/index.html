@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>gt</title>
 </head>
+
 <body>
     <h1>test</h1>
-    <script src="./dist/gt.min.js"></script>
+    <script src="dist/gt.min.js"></script>
     <script>
         console.log({
-            dateFromat:gt.dateFromat(1507513800642, 'yyyy/MM/dd hh:mm:ss')
+            dateFromat: gt.dateFormat(1507513800642, 'yyyy/MM/dd hh:mm:ss'),
+            phone: gt.phone(15902042654),
+            isEmail:gt.isEmail('456464@qq111.com')
         })
     </script>
 </body>
+
 </html>

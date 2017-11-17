@@ -20,15 +20,15 @@ module.exports = () => {
       navigator.appVersion.toLowerCase()) ||
     ''
 
-  if (/mac/i.test(appVersion)) return 'MacOSX'
-  if (/win/i.test(appVersion)) return 'windows'
-  if (/linux/i.test(appVersion)) return 'linux'
+  if ('/mac/i'.test(appVersion)) return 'MacOSX'
+  if ('/win/i'.test(appVersion)) return 'windows'
+  if ('/linux/i'.test(appVersion)) return 'linux'
   if (
-    /iphone/i.test(userAgent) ||
-    /ipad/i.test(userAgent) ||
-    /ipod/i.test(userAgent)
+    '/iphone/i'.test(userAgent) ||
+    '/ipad/i'.test(userAgent) ||
+    '/ipod/i'.test(userAgent)
   )
     'ios'
-  if (/android/i.test(userAgent)) return 'android'
-  if (/win/i.test(appVersion) && /phone/i.test(userAgent)) return 'windowsPhone'
+  if ('/android/i'.test(userAgent)) return 'android'
+  if ('/win/i'.test(appVersion) && '/phone/i'.test(userAgent)) return 'windowsPhone'
 }

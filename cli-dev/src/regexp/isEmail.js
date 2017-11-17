@@ -4,5 +4,5 @@
  * @return {Boolean} 
  */
 module.exports = str => {
-  return /\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/.test(str)
+  return '/w+([-+.]w+)*@w+([-.]w+)*.w+([-.]w+)*/'.test(str)
 }

@@ -5,7 +5,7 @@
    */
 module.exports = () => {
   return (
-    navigator.userAgent.toLowerCase().match(/MicroMessenger/i) ===
+    navigator.userAgent.toLowerCase().match('/MicroMessenger/i') ===
     'micromessenger'
   )
 }

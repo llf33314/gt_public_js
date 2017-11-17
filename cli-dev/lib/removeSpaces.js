@@ -4,5 +4,5 @@
    * @return  { value }
    */
 module.exports = str => {
-  return str.replace(/(^\s*)|(\s*$)/g, '')
+  return str.replace('/(^\s*)|(\s*$)/g', '')
 }

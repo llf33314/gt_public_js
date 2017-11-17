@@ -19,8 +19,9 @@
     // 完整引入
     const gt = require('gt-public-js/lib/gt.min')
 
+    -------打包报错!!!!--------
     // 只引入部分方法('dist/<方法名>')
-    const getMd5 = require('gt-public-js/lib/getMd5')
+    //const getMd5 = require('gt-public-js/lib/getMd5')
 
     export default{
       methods(){
