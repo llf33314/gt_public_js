@@ -1,9 +1,9 @@
 /**
  * @Created by SlaneYang
  * @desc 随机生成颜色
- * @return {String} 
+ * @return {String}
  */
-module.exports = () => {
+export default () => {
   return (
     '#' + ('00000' + ((Math.random() * 0x1000000) << 0).toString(16)).slice(-6)
   )

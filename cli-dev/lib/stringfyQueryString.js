@@ -1,10 +1,10 @@
 /**
- * 
+ *
  * @desc   对象序列化
- * @param  {Object} obj 
+ * @param  {Object} obj
  * @return {String}
  */
-module.exports = obj => {
+export default obj => {
   if (!obj) return ''
   var pairs = []
 

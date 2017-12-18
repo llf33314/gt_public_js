@@ -1,9 +1,9 @@
 /**
  * @desc js仿照md5
- * @param { }  
+ * @param { }
  * @return  { Number }
  */
-module.exports = () => {
+export default () => {
   var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
   return str
     .split('')

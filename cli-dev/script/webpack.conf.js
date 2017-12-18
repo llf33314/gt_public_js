@@ -8,10 +8,10 @@ const rootPath = path.resolve(__dirname, '../')
 const config = {
     entry: path.resolve(rootPath, 'src', 'index.js'),
     output: {
-        filename: `${pkg.name}.min.js`,
+        filename: 'gt.min.js',
         path: path.resolve(rootPath, 'dist'),
-        library: `${pkg.name}`,
-        libraryTarget: "umd"
+        library: 'gt',
+        libraryTarget: "window"
     },
     module: {
         rules: [{

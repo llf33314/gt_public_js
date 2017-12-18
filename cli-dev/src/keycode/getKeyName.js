@@ -110,11 +110,11 @@ var keyCodeMap = {
 /**
  * @Created by SlaneYang
  * @desc 根据keycode获得键名
- * @param  {Number} keycode 
+ * @param  {Number} keycode
  * @return {String}
  */
 
-module.exports = keycode => {
+export default keycode => {
   if (keyCodeMap[keycode]) {
     return keyCodeMap[keycode]
   } else {

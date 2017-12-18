@@ -4,7 +4,8 @@
  * @param { val }  需要判断的值
  * @return  返回true or false
  */
-module.exports = val => {
-    return Object.prototype.toString.call(val) === '[object Number]' ? true : false
+export default val => {
+  return Object.prototype.toString.call(val) === '[object Number]'
+    ? true
+    : false
 }
-  

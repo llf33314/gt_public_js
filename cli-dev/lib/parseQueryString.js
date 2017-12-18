@@ -1,10 +1,10 @@
 /**
- * 
+ *
  * @desc   url参数转对象
  * @param  {String} url  default: window.location.href
- * @return {Object} 
+ * @return {Object}
  */
-module.exports = url => {
+export default url => {
   url = url == null ? window.location.href : url
   var search = url.substring(url.lastIndexOf('?') + 1)
   if (!search) {

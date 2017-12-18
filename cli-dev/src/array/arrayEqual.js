@@ -1,11 +1,11 @@
 /**
- * 
- * @desc 判断两个数组是否相等
- * @param {Array} arr1 
- * @param {Array} arr2 
+ *
+ * @desc 判断两个数组(数值是数字和字符的数组)是否相等
+ * @param {Array} arr1
+ * @param {Array} arr2
  * @return {Boolean}
  */
-module.exports = (arr1, arr2) => {
+export default (arr1, arr2) => {
   if (arr1 === arr2) return true
   if (arr1.length != arr2.length) return false
   for (var i = 0; i < arr1.length; ++i) {

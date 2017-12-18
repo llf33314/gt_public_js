@@ -1,9 +1,9 @@
 /**
  * @Created by SlaneYang
  * @desc 获取操作系统类型
- * @return {String} 
+ * @return {String}
  */
-module.exports = () => {
+export default () => {
   var userAgent =
     ('navigator' in window &&
       'userAgent' in navigator &&
@@ -30,5 +30,6 @@ module.exports = () => {
   )
     'ios'
   if ('/android/i'.test(userAgent)) return 'android'
-  if ('/win/i'.test(appVersion) && '/phone/i'.test(userAgent)) return 'windowsPhone'
+  if ('/win/i'.test(appVersion) && '/phone/i'.test(userAgent))
+    return 'windowsPhone'
 }

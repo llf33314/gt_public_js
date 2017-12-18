@@ -2,50 +2,50 @@
  * @desc webpack打包入口文件
  */
 //---------- array ----------
-const arrayEqual = require('./array/arrayEqual')
-const arrayUnique = require('./array/arrayUnique')
-const isArray = require('./array/isArray')
+import arrayEqual from './array/arrayEqual'
+import arrayUnique from './array/arrayUnique'
+import isArray from './array/isArray'
 //---------- device ----------
-const getExplore = require('./device/getExplore')
-const getOS = require('./device/getOS')
-const isWeChat = require('./device/isWeChat')
+import getExplore from './device/getExplore'
+import getOS from './device/getOS'
+import isWeChat from './device/isWeChat'
 //---------- keycode ----------
-const getKeyName = require('./keycode/getKeyName')
+import getKeyName from './keycode/getKeyName'
 //---------- number ----------
-const digitUppercase = require('./number/digitUppercase')
-const getMd5 = require('./number/getMd5')
-const isNumber = require('./number/isNumber')
-const isPrice = require('./number/isPrice')
+import digitUppercase from './number/digitUppercase'
+import getMd5 from './number/getMd5'
+import isNumber from './number/isNumber'
+import isPrice from './number/isPrice'
 //---------- object ----------
-const deepClone = require('./object/deepClone')
-const isEmptyObject = require('./object/isEmptyObject')
-const isObject = require('./object/isObject')
-const stringfyQueryString = require('./object/stringfyQueryString')
+import deepClone from './object/deepClone'
+import isEmptyObject from './object/isEmptyObject'
+import isObject from './object/isObject'
+import stringfyQueryString from './object/stringfyQueryString'
 //---------- random ----------
-const getRandom = require('./random/getRandom')
-const randomColor = require('./random/randomColor')
+import getRandom from './random/getRandom'
+import randomColor from './random/randomColor'
 //---------- regexp ----------
-const fixedTelephone = require('./regexp/fixedTelephone')
-const isCarNo = require('./regexp/isCarNo')
-const isEmail = require('./regexp/isEmail')
-const isIdCard = require('./regexp/isIdCard')
-const mobilePhone = require('./regexp/mobilePhone')
-const phone = require('./regexp/phone')
+import fixedTelephone from './regexp/fixedTelephone'
+import isCarNo from './regexp/isCarNo'
+import isEmail from './regexp/isEmail'
+import isIdCard from './regexp/isIdCard'
+import mobilePhone from './regexp/mobilePhone'
+import phone from './regexp/phone'
 //---------- string ----------
-const isContains = require('./string/isContains')
-const isString = require('./string/isString')
-const removeSpaces = require('./string/removeSpaces')
+import isContains from './string/isContains'
+import isString from './string/isString'
+import removeSpaces from './string/removeSpaces'
 //---------- time ----------
-const dateFormat = require('./time/dateFormat')
-const formatPassTime = require('./time/formatPassTime')
-const formatRemainTime = require('./time/formatRemainTime')
-const getWeekDay = require('./time/getWeekDay')
+import dateFormat from './time/dateFormat'
+import formatPassTime from './time/formatPassTime'
+import formatRemainTime from './time/formatRemainTime'
+import getWeekDay from './time/getWeekDay'
 //---------- url ----------
-const isUrl = require('./url/isUrl')
-const parseQueryString = require('./url/parseQueryString')
-const urlJsonLsit = require('./url/urlJsonLsit')
+import isUrl from './url/isUrl'
+import parseQueryString from './url/parseQueryString'
+import urlJsonLsit from './url/urlJsonLsit'
 
-module.exports = {
+export {
   //array
   arrayEqual,
   arrayUnique,
@@ -88,5 +88,5 @@ module.exports = {
   //url
   isUrl,
   parseQueryString,
-  urlJsonLsit,
+  urlJsonLsit
 }

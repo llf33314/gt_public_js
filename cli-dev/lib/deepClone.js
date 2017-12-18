@@ -3,7 +3,7 @@
  * @desc 深拷贝，支持常见类型
  * @param {Any} values
  */
-module.exports = values => {
+export default values => {
   var copy
 
   // Handle the 3 simple types, and null or undefined

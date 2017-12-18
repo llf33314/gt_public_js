@@ -5,7 +5,7 @@
  * @return {Boolean}
  */
 
-module.exports = obj => {
+export default obj => {
   if (!obj || typeof obj !== 'object' || Array.isArray(obj)) return false
   return !Object.keys(obj).length
 }

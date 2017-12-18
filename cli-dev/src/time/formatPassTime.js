@@ -1,10 +1,10 @@
 /**
  * @desc   格式化${startTime}距现在的已过时间
- * @param  {Date} startTime 
+ * @param  {Date} startTime
  * @return {String}
  */
 
-module.exports = startTime => {
+export default startTime => {
   var currentTime = Date.parse(new Date()),
     time = currentTime - startTime,
     day = parseInt(time / (1000 * 60 * 60 * 24)),

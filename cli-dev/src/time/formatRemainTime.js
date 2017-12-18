@@ -1,11 +1,11 @@
 /**
- * 
+ *
  * @desc   格式化现在距${endTime}的剩余时间
- * @param  {Date} endTime  
+ * @param  {Date} endTime
  * @return {String}
  */
 
-module.exports = endTime => {
+export default endTime => {
   var startDate = new Date() //开始时间
   var endDate = new Date(endTime) //结束时间
   var t = endDate.getTime() - startDate.getTime() //时间差

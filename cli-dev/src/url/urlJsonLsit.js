@@ -1,9 +1,9 @@
 /**
  * @desc 对象转为url字符串形式
- * @param { Obje}  
+ * @param { Obje}
  * @return  { String }
  */
-module.exports = obj => {
+export default obj => {
   return Object.keys(obj)
     .map(function(k) {
       return encodeURIComponent(k) + '=' + encodeURIComponent(obj[k])
